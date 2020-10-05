@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Tilt : MonoBehaviour
 {
-    private float rotationFactor = 8f;
+    private float rotationFactor = 0.1f;
     private float xRotation = 0;
     private float zRotation = 0;
 
@@ -17,35 +17,36 @@ public class Tilt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey("left") && zRotation < 10)
+        //Right
+        if(Input.GetAxis("Horizontal") > 0.1 && (gameObject.transform.rotation.z > -0.20))
         {
-            zRotation += rotationFactor;
-            TiltLeftAndRight(zRotation);
+            print(gameObject.transform.rotation.z);
+            TiltLeftAndRight(-rotationFactor);
         }
-        if(Input.GetKey("right") && zRotation > -10)
+        //Left
+        if(Input.GetAxis("Horizontal") < -0.1 && (gameObject.transform.rotation.z < 0.20))
         {
-            zRotation -= rotationFactor;
-            TiltLeftAndRight(zRotation);
+            TiltLeftAndRight(rotationFactor);
         }
-        if(Input.GetKey("up") && xRotation < 10)
+        //Up
+        if(Input.GetAxis("Vertical") > 0.1 && (gameObject.transform.rotation.x < 0.20))
         {
-            xRotation += rotationFactor;
-            TiltUpAndDown(xRotation);
+            TiltUpAndDown(rotationFactor);
         }
-        if(Input.GetKey("down") && xRotation > -10)
+        //Down
+        if(Input.GetAxis("Vertical") < -0.1 && (gameObject.transform.rotation.x > -0.20))
         {
-            xRotation -= rotationFactor;
-            TiltUpAndDown(xRotation);
+            TiltUpAndDown(-rotationFactor);
         }
     }
 
-    void TiltLeftAndRight(float zRot){
+    void TiltLeftAndRight(float factor){
         
-        gameObject.transform.Rotate(gameObject.transform.localRotation.x, gameObject.transform.localRotation.y, zRot);
+        transform.Rotate(0, 0, factor);
     }
 
-    void TiltUpAndDown(float xRot){
-        gameObject.transform.Rotate(xRot, gameObject.transform.localRotation.y, gameObject.transform.localRotation.z);
+    void TiltUpAndDown(float factor){
+        gameObject.transform.Rotate(factor, 0, 0);
     }
 
 }
