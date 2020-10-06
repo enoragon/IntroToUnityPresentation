@@ -7,7 +7,7 @@ public class RandomPosition : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.eulerAngles = new Vector3(transform.eulerAngles.x, (Random.Range(0, 5) * 45), transform.eulerAngles.z);
+        transform.eulerAngles = new Vector3(transform.eulerAngles.x, (Random.Range(0, 4) * 45), transform.eulerAngles.z);
     }
 
 }
