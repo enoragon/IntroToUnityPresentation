@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4451561, g: 0.49476606, b: 0.57382447, a: 1}
+  m_IndirectSpecularColor: {r: 0.44515634, g: 0.4947666, b: 0.5738258, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -579,7 +579,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 326.3}
+  m_AnchoredPosition: {x: 0, y: 62.46}
   m_SizeDelta: {x: 340.2859, y: 183.50949}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &290965699
@@ -1005,10 +1005,10 @@ RectTransform:
   m_Father: {fileID: 805377964}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.1, y: -188.6}
-  m_SizeDelta: {x: 1874.4658, y: 407.36322}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 6.050415, y: -130}
+  m_SizeDelta: {x: 634.4658, y: 407.36322}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &867362923
 MonoBehaviour:
@@ -1032,7 +1032,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 108
+    m_FontSize: 45
     m_FontStyle: 2
     m_BestFit: 0
     m_MinSize: 10
@@ -2373,10 +2373,10 @@ RectTransform:
   m_Father: {fileID: 805377964}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.9, y: 113.7}
-  m_SizeDelta: {x: 1864.1652, y: 736.4791}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0.9000244, y: 113.7}
+  m_SizeDelta: {x: 624.16516, y: 736.4791}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1990764889
 MonoBehaviour:
@@ -2400,7 +2400,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 232
+    m_FontSize: 99
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
