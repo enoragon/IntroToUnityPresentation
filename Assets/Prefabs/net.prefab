@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2695653084637872937}
   - component: {fileID: 2040619493771463102}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: WinArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49,7 +49,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 66619150371596404}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -108,6 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a50f857cf9d41f4387f6fcf17240ce3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WinUI: {fileID: 0}
 --- !u!1 &1274498246881068791
 GameObject:
   m_ObjectHideFlags: 0
